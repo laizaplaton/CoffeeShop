@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body{
+    background: burlywood;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+.container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+header .title{
+    font-size: larger;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+header .icon-cart{
+    position: relative;
+    font-size: 30px;
+
+}
+header .icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: brown;
+    justify-content: center;
+    color: beige;
+    font-size: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -12px;
+}
+.listProducts .items img{
+    width: 90%;
+}
+.listProducts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProducts .items{
+    background-color: beige;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProducts .items h2{
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 20px;
+    color: brown;
+}
+.listProducts .items p{
+    font-weight: 500;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+}
+.listProducts .items .price{
+    letter-spacing: 5px;
+    font-size: small;
+}
+.listProducts .items button{
+    background: burlywood;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+.listProducts .items button:hover{
+    background: brown;
+    color: beige;
+}
+.cartTab{
+    width: 40opx;
+    background: brown;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: top right bottom left;
+}
+

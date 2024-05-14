@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean There, Done That Coffee Shop</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="nav container">
+
+            <a href="#" class="logo">Coffee<span>.</span></a>
+
+            <div class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#"><i class='bx bx-user'></i></a>
+                <a href="#"><i class='bx bx-shopping-bag' ></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home container" id="home">
+    <div class="home-text">
+        <h1>
+            Your Daily Dose of Happiness
+        </h1>
+        <p>
+            More than just coffee, it's a daily dose of happiness.
+            Coffee lovers unite!<br> Explore beans, brews, and equipment for every coffee enthusiast.
+        </p>
+        <a href="#" class="btn">
+            <span>Shop Now</span>
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+    </div>
+
+    <img src="images/coffeebg.png" class="home-img" />
+</section>
+<section class="services container" id="services">
+    <div class="heading">
+        <h2>Espresso, lattes, cappuccinos, and more - your coffee haven.</h2>
+    </div>
+        <div class="service-content">
+            <div class="ser-box">
+                <img src="images/coffee.png" alt="" />
+                <p>Hot Coffee</p>
+            </div>
+            <div class="ser-box">
+                <img src="images/iced-coffee.png" alt="" />
+                <p>Iced Coffee</p>
+            </div>
+            <div class="ser-box">
+                <img src="images/frappe.png" alt="" />
+                <p>Frappe</p>
+            </div>
+            <div class="ser-box">
+                <img src="images/fruit.png" alt="" />
+                <p>Refreshers</p>
+            </div>
+            <div class="ser-box">
+                <img src="images/snack.png" alt="" />
+                <p>Snacks</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products_display" id="products">
+    <div class="heading">
+        <h2 class="product-collections">Coffee <span class="span_title">MENU</span></h2>
+        <a href="#" onclick="popup_cart()">
+            <i class='bx bx-cart' id="cart"></i>
+        </a>
+    </div>
+</section>
+
+<section class="collection_disp" id="collection_disp">
+    <h1 class="menu-title"><span class="span-title">COFFEE</span>MENU</h1>
+
+    <div class="box-container">
+        <h1>HOT COFFEE</h1>
+        <div class="hotcoffee-product">
+            <div class="box">
+                <a href="#hotAmericano" id="hotAmericano" onclick="displayProduct(hotAmericano)">
+                    <i class='bx bxs-circle' ></i></a>
+                    <img class="product-img" src="images/hot_americano.jpg" alt="Hot Americano">
+                    <h1 class="product_title">Hot Americano</h1><br>
+                    <h1 class="desc">A strong espresso diluted with hot water, creating a bolder coffee experience
+                        than a standard drip brew.</h1>
+                        <table>
+                            <tr>
+                                <td class="price">₱120.00</td>
+                            </tr>
+                        </table>
+            </div>
+    
+            <div class="box">
+                <a href="#hotCappuccino" id="hotCappuccino" onclick="displayProduct(hotCappuccino)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/hot_cappuccino.jpeg" alt="Hot Cappucino">
+                    <h1 class="product_title">Hot Cappuccino</h1><br>
+                    <h1 class="desc">A classic Italian coffee featuring espresso, steamed milk, 
+                        and a thick layer of milk foam, offers a balanced coffee blend and creamy texture.</h1>
+                        <table>
+                            <tr>
+                                <td class="price">₱140.00</td>
+                            </tr>
+                        </table>
+            </div>
+    
+            <div class="box">
+                <a href="#hotChoco" id="hotChoco" onclick="displayProduct(hotChoco)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/hot_chocolate.jpeg" alt="Hot Chocolate">
+                    <h1 class="product_title">Hot Chocolate</h1><br>
+                    <h1 class="desc">A warm, comforting drink made with melted chocolate or cocoa powder, typically mixed with
+                        hot milk and sweetened.</h1>
+                        <table>
+                            <tr>
+                                <td class="price">₱140.00</td>
+                            </tr>
+                        </table>
+            </div>
+    
+            <div class="box">
+                <a href="#hotMocha" id="hotMocha" onclick="displayProduct(hotMocha)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/hot_mocha.png" alt="Hot Americano">
+                    <h1 class="product_title">Hot Mocha</h1><br>
+                    <h1 class="desc">A delightful coffee drink combining espresso with rich chocolate, often topped with whipped
+                        cream for a decadent treat.</h1>
+                        <table>
+                            <tr>
+                                <td class="price">₱150.00</td>
+                            </tr>
+                        </table>
+            </div>
+        </div>
+                
+        <h1>ICED COFFEE</h1>
+        <div class="icedcoffee-product">
+            <div class="box">
+                <a href="#icedAmericano" id="icedAmericano" onclick="displayProduct(icedAmericano)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/iced_americano.jpg" alt="Iced Americano">
+                    <h1 class="product_title">Iced Americano</h1><br>
+                    <h1 class="desc">Bold espresso diluted with cold water, perfect for a refreshing coffee kick.</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱160.00</td>
+                        </tr>
+                    </table>
+            </div>        
+            
+            <div class="box">
+                <a href="#icedCappuccino" id="icedCappuccino" onclick="displayProduct(icedCappuccino)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/iced_cappuccino.jpg" alt="Iced Cappucino">
+                    <h1 class="product_title">Iced Cappuccino</h1><br>
+                    <h1 class="desc">Espresso, cold milk, and a thick layer of milk foam, offering a balanced and creamy coffee 
+                        experience over ice.</h1>
+                        <table>
+                            <tr>
+                                <td class="price">₱165.00</td>
+                            </tr>
+                        </table>
+            </div>       
+            
+            <div class="box">
+                <a href="#icedLatte" id="icedLatte" onclick="displayProduct(icedLatte)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/iced_latte.jpg" alt="Iced Latte">
+                    <h1 class="product_title">Iced Latte</h1><br>
+                    <h1 class="desc">Espresso mixed with a larger portion of cold milk, creating a smooth and milky coffee drink.</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱180.00</td>
+                        </tr>
+                    </table>
+            </div>        
+            
+            <div class="box">
+                <a href="#icedCarMacch" id="icedCarMacch" onclick="displayProduct(icedCarMacch)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/iced_caramel-macchiato.jpg" alt="Iced Caramel Macchiato">
+                    <h1 class="product_title">Iced Caramel Macchiato</h1><br>
+                    <h1 class="desc">Espresso layered over cold milk with a drizzle of caramel sauce, offering a sweet and refreshing 
+                        coffee treat.</h1>
+                        <table>
+                            <tr>
+                                <td class="price">₱190.00</td>
+                            </tr>
+                        </table>
+            </div>        
+    
+        </div>
+        
+        <h1>FRAPPE</h1>
+        <div class="frappe-product">
+            <div class="box">
+                <a href="#caramelCream" id="caramelCream" onclick="displayProduct(caramelCream)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/caramelcream_frappe.jpg" alt="Caramel Cream Frappe">
+                    <h1 class="product_title">Caramel Cream Frappe</h1><br>
+                    <h1 class="desc">Creamy blend of caramel, milk, and ice, topped with whipped cream
+                        and caramel drizzle.</h1>
+                        <table>
+                            <tr>
+                                <td class="price">₱220.00</td>
+                            </tr>
+                        </table>
+            </div>        
+            
+            <div class="box">
+                <a href="#chocolateFrappe" id="chocolateFrappe" onclick="displayProduct(chocolateFrappe)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/chocolate_frappe.jpg" alt="Chocolate Chip Frappe">
+                    <h1 class="product_title">Chocolate Chip Frappe</h1><br>
+                    <h1 class="desc">Blended coffee, chocolate chips, milk, and ice, for a decadent treat</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱240.00</td>
+                        </tr>
+                    </table>
+            </div>        
+            
+            <div class="box">
+                <a href="coffeeJelly" id="coffeeJelly" onclick="displayProduct(coffeeJelly)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/coffejelly_frappe.jpg" alt="Coffee Jelly Frappe">
+                    <h1 class="product_title">Coffee Jelly Frappe</h1><br>
+                    <h1 class="desc">Refreshing coffee drink with blended coffee, milk, ice, and chewy coffee jelly bits.</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱240.00</td>
+                        </tr>
+                    </table>
+            </div>        
+            
+            <div class="box">
+                <a href="#strawberriesCream" id="strawberriesCream" onclick="displayProduct(strawberriesCream)">
+                    <i class='bx bxs-circle' ></i></a>
+    
+                    <img class="product-img" src="images/strawberries and cream_frappe.jpg" alt="Strawberries and Cream">
+                    <h1 class="product_title">Strawberries and Cream</h1><br>
+                    <h1 class="desc">Sweet and creamy blend of strawberries, milk, and ice, topped with whipped cream.</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱255.00</td>
+                        </tr>
+                    </table>
+            </div>        
+    
+
+        </div>
+        
+        <div class="box">
+            <a href="mangoDragon" id="mangoDragon" onclick="displayProduct(mangoDragon)">
+                <i class='bx bxs-circle' ></i></a>
+
+                <img class="product-img" src="images/refresher_mango dragonfruit.jpeg" alt="Mango Dragonfruit">
+                <h1 class="product_title">Mango Dragonfruit</h1><br>
+                <h1 class="desc">Tropical blend of mango and dragonfruit flavors, perfect for a fruity refreshment.</h1>
+                <table>
+                    <tr>
+                        <td class="price">₱260.00</td>
+                    </tr>
+                </table>
+        </div>        
+        
+        <div class="box">
+            <a href="#hibiscusTea" id="hibiscusTea" onclick="displayProduct(hibiscusTea)">
+                <i class='bx bxs-circle' ></i></a>
+
+                <img class="product-img" src="images/refresher_hibiscus-tea.jpg" alt="Hibiscus Tea with Pomegranate">
+                <h1 class="product_title">Hibiscus Tea with Pomegranate</h1><br>
+                <h1 class="desc">Tart and refreshing hibiscus tea with sweet and juicy pomegranate pearls.</h1>
+                <table>
+                    <tr>
+                        <td class="price">₱220.00</td>
+                    </tr>
+                </table>
+        </div>        
+        
+        <div class="box">
+            <a href="#pinkDrink" id="pinkDrink" onclick="displayProduct(pinkDrink)">
+                <i class='bx bxs-circle' ></i></a>
+
+                <img class="product-img" src="images/refresher_pink drink.jpeg" alt="Pink Drink with Strawberry Açaí">
+                <h1 class="product_title">Pink Drink with Strawberry Açaí</h1><br>
+                <h1 class="desc">Sweet and vibrant blend of strawberry acai and coconut milk, topped with a light strawberry.</h1>
+                <table>
+                    <tr>
+                        <td class="price">₱240.00</td>
+                    </tr>
+                </table>
+        </div>        
+        
+        <div class="box">
+            <a href="strawberry" id="strawberry" onclick="displayProduct(strawberry)">
+                <i class='bx bxs-circle' ></i></a>
+
+                <img class="product-img" src="images/refresher_strawberry.jpeg" alt="Strawberry Açaí with Lemonade">
+                <h1 class="product_title">Strawberry Açaí with Lemonade</h1><hr>
+                <h1 class="desc">Refreshing combination of strawberry acai and lemonade, perfect for a tangy and fruity drink.</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱210.00</td>
+                        </tr>
+                    </table>
+        </div>
+
+        <div class="box">
+            <a href="chocolateChip" id="chocolateChip" onclick="displayProduct(chocolateChip)">
+                <i class='bx bxs-circle' ></i></a>
+
+                <img class="product-img" src="images/chocolate chip_cookie.jpg" alt="Chocolate chip Cookie">
+                <h1 class="product_title">Chocolate chip Cookie</h1><hr>
+                <h1 class="desc">Classic chewy cookie studded with delicious chocolate chips.</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱55.00</td>
+                        </tr>
+                    </table>
+        </div>
+
+        <div class="box">
+            <a href="#vanillaBean" id="vanillaBean" onclick="displayProduct(vanillaBean)">
+                <i class='bx bxs-circle' ></i></a>
+
+                <img class="product-img" src="images/vanilla bean custard.jpg" alt="Vanilla Bean Custard Danish">
+                <h1 class="product_title">Vanilla Bean Custard Danish</h1><br>
+                <h1 class="desc">Flaky pastry filled with creamy vanilla bean custard.</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱50.00</td>
+                        </tr>
+                    </table>
+        </div>
+
+        <div class="box">
+            <a href="#glazedDonut" id="glazedDonut" onclick="displayProduct(glazedDonut)">
+                <i class='bx bxs-circle' ></i></a>
+
+                <img class="product-img" src="images/glazed-donut.png" alt="Glazed Doughnut">
+                <h1 class="product_title">Glazed Doughnut</h1><hr>
+                <h1 class="desc">Light and fluffy donut coated in a sweet and shiny glaze.</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱45.00</td>
+                        </tr>
+                    </table>
+        </div>
+
+        <div class="box">
+            <a href="#hamSwiss" id="hamSwiss" onclick="displayProduct(hamSwiss)">
+                <i class='bx bxs-circle' ></i></a>
+
+                <img class="product-img" src="images/Ham & Swiss_Croissant.jpeg" alt="Vanilla Bean Custard Danish">
+                <h1 class="product_title">Ham and Swiss Croissant</h1><hr>
+                <h1 class="desc">Buttery croissant filled with savory ham and swiss cheese.</h1>
+                    <table>
+                        <tr>
+                            <td class="price">₱55.00</td>
+                        </tr>
+                    </table>
+        </div>
+    </div>
+</section>
+
+<section class="product-cart" id="product-cart">
+    <div class="cart-container">
+        
+        <div class="img-holder">
+            <img class="addtocart-img" id="product-img" src="" alt="Hot Americano">
+        </div>
+
+        <div class="product-display">
+            <h1 id="product-name"></h1>
+
+            <a id="close-toggle" href="#" onclick="toggle_remove()">
+                <span class=""><i class='bx bx-x' ></i></span>
+            </a>
+            <hr>
+
+            <p class="desc">Description: </p>
+            <p id="desc"> </p>
+
+            <table border="0">
+                <tr>
+                    <td class="price">
+                        <input type="submit" id="price" name="price" value="" onchange="updatePrice()"/>
+                        <label for="price" id="price"></label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td >Selected Price:</td>
+                    <td class="qty">
+                        <p class="selected-price" id="selected-price"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quantity">Quantity:</td>
+                    <td class="qty">
+                        <input type="number" id="quantity" name="quantity" min="1" value="0" required/>
+                    </td>
+                </tr>
+            </table>
+
+            <button id="add_to_cart" onclick="add_to_cart()">Add to Cart</button>
+
+            <button id="place_order" onclick="">Place Order</button>
+        </div>
+    </div>
+</section>
+
+<section class="shopping_cart" id="shopping_cart">
+	<div class="order_container">
+		<h1 id="shop_title">Your Shopping Cart</h1>
+
+        <a id="close_toggle" href="#" onclick="remove_cart()">
+            <span class="fa-solid fa-xmark"></span>
+        </a>
+
+		<hr>
+
+		<h2> Cart items: </h2>
+		<table border = "0" id ="item_list"></table>
+		
+   		<p class="total_price"> Total: <span id="total_price"> 0.00 </span></p>
+
+		<button id="check_out" onclick="go_to_next()">Check Out</button>
+	</div>
+</section>
+
+<div class="overlay_sc"></div>
+
+
+<section class="place-order" id="place-order">
+	<div class="deliver-info">
+		<a href="#" onclick="back-to-cart()">
+			<span class=""><i class='bx bx-arrow-back' ></i></span>
+		</a>
+
+		<div class="sub-title">
+			<span class='bx bx-search-alt-2'></span>
+			<h1>Delivery Information</h1>
+		</div>
+
+		<form>
+			<table border="0">
+				<tr>
+					<td>Full Name:</td>
+					<td class="input_center">
+						<input type="text" id="full_name" name="full_name" value="" placeholder="Name" required/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Mobile Number:</td>
+					<td class="input_center">
+						<input type="number" id="mobile_num" name="mobile_num" value="" placeholder="(+63) 907 032 4570" required/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Address:</td>
+					<td class="input_center">
+						<textarea id="address" placeholder="Your Full Address" required></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<span class='bx bxs-wallet'>Payment Option: </span>
+					</td>
+					<td class="input_center">
+						<select name="pay_method" id="pay_method" onchange="toggle_cardfields()">
+							<option value="Cash_on_Delivery">Cash on Delivery</option>
+							<option value="Card">Credit/Debit Card</option>
+						</select><br>
+					</td>
+				</tr>
+
+				<tr id="name_on_card_row" style="display: none;">
+					<td style="border: none;"></td>
+					<td class="input_center" style="border: none;">
+						<input type="text" id="name_on_card" name="name_on_card" value="" placeholder="Name on Card" required/>
+					</td>
+				</tr>
+
+				<tr id="card_num_row" style="display: none;">
+					<td></td>
+					<td class="input_center">
+						<input type="number" id="card_num" name="card_num" value="" placeholder="Card Number" required/>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2" class="input_center">
+						<textarea placeholder="Other instructions..."></textarea>
+					</td>
+				</tr>
+			</table>
+
+			<button type="reset" id="place_order" onclick="display_success()">Place Order</button>
+		</form>
+	</div>
+</section>
+
+
+    <section class="team container" id="team">
+        <div class="heading">
+            <h2>Team</h2>
+        </div>
+
+        <div class="team-content">
+            <div class="team-box">
+                <img src="images/img1.jpeg" alt="">
+                <h2>Laiza</h2>
+                <span>Team Lead</span>
+                <p>In creating this responsive website, I was able to explore different perspectives and different use of languages, such as HTML/CSS/JavaScript.</p>
+            </div>
+
+            <div class="team-box">
+                <img src="images/img2.jpeg" alt="">
+                <h2>Marie</h2>
+                <span>Team Lead</span>
+                <p>In creating this responsive website, I was able to explore different perspectives and different use of languages, such as HTML/CSS/JavaScript.</p>
+            </div>
+
+            <div class="team-box">
+                <img src="images/img3.jpeg" alt="">
+                <h2>Platon</h2>
+                <span>Team Lead</span>
+                <p>In creating this responsive website, I was able to explore different perspectives and different use of languages, such as HTML/CSS/JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer container">
+        <div class="footer-box">
+            <a href="#" class="logo">Coffee.</a>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bx-envelope' ></i></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>About</h3>
+            <a href="#">Our Story</a>
+            <a href="#">FAQ</a>
+            <a href="#">Careers</a>
+        </div>
+        <div class="footer-box">
+            <h3>Customer's Resources</h3>
+            <a href="#">Menu</a>
+            <a href="#">Location</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="footer-box">
+            <h3>Services</h3>
+            <a href="#">Payment Options</a>
+            <a href="#">Refunds & Exchanges</a>
+            <a href="#">Limitation Of Liability</a>
+        </div>
+    </section>
+
+    <p class="copyright">&#169; Coffee.</p>
+
+    <script src="index.js"></script>
+</body>
+</html>

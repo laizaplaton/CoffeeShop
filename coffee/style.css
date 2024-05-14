@@ -1,0 +1,502 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    font-family: "Poppins", sans-serif ;
+}
+
+body{
+    height: 100vh;
+    background: #FFF2D7;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+.container{
+    max-width: 1060px;
+    margin: auto;
+    width: 100%;
+}
+header{
+    position: fixed;
+    display: flex;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #D8AE7E;
+    padding: 17px 20px;
+    border-radius: 2rem;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Playfair Display", serif;
+    color: beige;
+}
+.logo:hover{
+    color: brown;
+    transition: .2s ease;
+}
+.logo span{
+    color: brown;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+.nav-link{
+    font-size: large;
+    color: beige;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: brown;
+    transition: .2s ease;
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.nav-icons .bx{
+    color: beige;
+    font-size: 40px;
+    font-weight: 600;
+}
+.nav-icons .bx:hover{
+    color: #481E14;
+    transition: .2s ease;
+}
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transform: 0.3s;
+}
+
+.home{
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-text h1{
+    font-size: 45px;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+    color: #D8AE7E;
+}
+.home-text p{
+    max-width: 300px;
+    font-size: 0.94rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    color: #481E14;
+    margin: 1rem 0 1.5rem;
+}
+.btn{
+    max-width: 160px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    border-radius: 2rem;
+    background:#D8AE7E;
+}
+.btn span{
+    font-family: "Poppins", sans-serif;
+    color: antiquewhite;
+    font-weight: 700;
+}
+.btn .bx{
+    font-size: 20px;
+    background: brown;
+    color: beige;
+    padding: 5px;
+    border-radius: 50%;
+    transform: rotate(60deg);
+}
+.home-img{
+    max-width:max-content;
+    width: 200%;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.heading h2{
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+    color: brown;
+}
+.services{
+    padding-top: 0;
+}
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 160px));
+    gap: 1rem;
+    align-items: center;
+}
+.ser-box{
+    background: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 35px 20px;
+    border-radius: 2rem;
+}
+.ser-box img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.ser-box p{
+    color: #FFF2D7;
+    font-weight: 600;
+}
+/*products */
+
+.heading p{
+    max-width: 550px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #481E14;
+    margin-top: 1rem;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.products-container{
+    display: -ms-inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    justify-content:space-between;
+    gap: 1.5rem;
+    border-radius: 1.5rem;
+    padding: 40px 60px;
+    margin-top: 32px;
+    background: burlywood;
+}
+.products-hotcoffee,
+.products-icedcoffee,
+.products-frappe,
+.products-refresher,
+.products-snacks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    justify-content: space-between;
+    gap: 1.5rem;
+    border-radius: 1.5rem;
+    padding: 40px 60px;
+    margin-top: 32px;
+    background: burlywood;
+}
+.products-container h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+    color: brown;
+}
+
+.box{
+    background-color: #FFF2D7;
+    padding: 20px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    color: #FFF2D7;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.products-container .box{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: var(#481E14);
+}
+.products-container img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    background: #f1f1f1;
+    margin-bottom: 0;
+    display: block;
+}
+.products-container .box h3{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: brown    ;
+    margin: 0.5rem 0 0.5rem;
+}
+.products-container .box a{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    text-align: left;
+    color: beige;
+    margin: 0.5rem 0 0.5rem;
+}
+.products-container .box .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products-container .box p{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 1rem 0 0.5rem;
+}
+.products-container .box .content span{
+    padding: 0 1rem;
+    background: #b08968;
+    border: 4px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.products-container .box .content a{
+    padding: 0 1rem;
+    color: brown;
+    border: 2px solid brown;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.products-container .box .content a:hover{
+    background: brown;
+    color: beige;
+    transition: 0.2s all linear;
+}
+.team-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+        gap:calc(1.5rem);
+}
+.team-content img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.team-box h2{
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: #481E14;
+    font-family: "Poppins", sans-serif;
+    margin-top: 1rem;
+}
+.team-box span{
+    font-size: 0.77rem;
+    color: gray;
+    font-family: "Poppins", sans-serif;
+}
+.team-box p{
+    font-size: 0.88rem;
+    font-family: "Poppins", sans-serif;
+    color: #481E14;
+    margin-top: 10px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem !important;
+}
+.footer .logo{
+    color: #481E14;
+}
+.social{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.social a{
+    font-size: 24px;
+    color: #D8AE7E;
+    margin-right: 1rem;
+}
+.social a:hover{
+    color:#481E14
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.footer-box h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #481E14;
+    margin-bottom: 1rem;
+}
+.footer-box a{
+    color: #481E14;
+    margin-bottom: 10px;
+}
+.copyright{
+    padding: 30px;
+    color: #481E14;
+    text-align: center;
+}
+/*RESPONSIVE*/
+@media (max-width:1080px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+    .product-content{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px;    
+    }    
+}
+@media (max-width: 875px) {
+    section{
+        padding: 2rem 0;
+    }
+    .home-text h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 770px) {
+    .home{
+        min-height: 500px;
+        grid-template-columns: 1fr;
+        margin-top: 4.5rem !important;
+    }
+    .home-text{
+        order: 1;
+    }
+    .heading h2{
+        font-size: 1.6rem;
+    }
+    .product-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media (max-width: 700px) {
+    header{
+        top: 15px;
+    }
+    .nav{
+        padding: 14px 20px;
+    }
+    .logo{
+        font-size: 1.25rem;
+    }
+    .menu-icon{
+        display: flex;
+    }
+    .navbar{
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        width: 99vw;
+        transform: translate(-50%);
+        background: #481E14;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    }
+    .open-menu{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .nav-link{
+        display: block;
+        margin: 1rem 0;
+    }
+}
+@media (max-width: 500px) {
+    .heading h2 br{
+        display: contents;
+    }
+    .service-content{
+        justify-content: center;
+    }
+    .product-content{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 380px) {
+    .service-content{
+        grid-template-columns: repeat(auto-fit, minmax(auto, 140px));
+    }
+    .ser-box img{
+        width: 80px;
+        height: 80px;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .heading h2{
+        font-size: 1.4rem;
+    }
+}

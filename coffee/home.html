@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean There, Done That Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="nav container">
+
+            <a href="#" class="logo">Coffee<span>.</span></a>
+
+            <div class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="coffeeProducts.html" class="nav-link">Products</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#"><i class='bx bx-user'></i></a>
+                <a href="#"><i class='bx bx-cart' ></i></a>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="home container" id="home">
+    <div class="home-text">
+        <h1>
+            Your Daily Dose of Happiness
+        </h1>
+        <p>
+            More than just coffee, it's a daily dose of happiness.
+            Coffee lovers unite!<br> Explore beans, brews, and equipment for every coffee enthusiast.
+        </p>
+        <a href="#" class="btn">
+            <span>Shop Now</span>
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+    </div>
+    <img src="images/coffeebg.png" class="home-img" />
+</section>
+<section class="services container" id="services">
+    <div class="heading">
+        <h2>Espresso, lattes, cappuccinos, and more - your coffee haven.</h2>
+    </div>
+        <div class="service-content">
+            <div class="ser-box">
+                <img src="images/coffee.png" href="hot" alt="" />
+                <p>Hot Coffee</p>
+            </div>
+            <div class="ser-box">
+                <img src="images/iced-coffee.png" alt="" />
+                <p>Iced Coffee</p>
+            </div>
+            <div class="ser-box">
+                <img src="images/frappe.png" alt="" />
+                <p>Frappe</p>
+            </div>
+            <div class="ser-box">
+                <img src="images/fruit.png" alt="" />
+                <p>Refreshers</p>
+            </div>
+            <div class="ser-box">
+                <img src="images/snack.png" alt="" />
+                <p>Snacks</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="products">
+    <div class="heading">
+        <h2> Our Popular Products</h2>
+    </div>
+    
+    <div class="products-container">
+        <h1>Hot Coffee </h1>
+        <div class="products-hotcoffee">
+            <div class="box">
+                <img src="images/hot_americano.jpg" alt="">
+                <h3>Hot Americano</h3>
+                <p>A strong espresso diluted with hot water, creating a bolder coffee experience
+                than a standard drip-brew.</p>
+                <div class="content">
+                    <span>₱120.00</span>
+                    <a href="#" onclick="add_to_cart('Hot Americano', 120.00)">Add to cart</a>            
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/hot_cappuccino.jpeg" alt="">
+                <h3>Hot Cappucino</h3>
+                <p>A classic Italian coffee featuring espresso, steamed milk, 
+                and a thick layer of milk foam, offers a balanced coffee blend and creamy texture.</p>
+                <div class="content">
+                    <span>₱140.00</span>
+                    <a href="#" onclick="add_to_cart('Hot Cappucino', 140.00)">Add to cart</a>            
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/hot_chocolate.jpeg" alt="">
+                <h3>Hot Chocolate</h3>
+                <p>A warm, comforting drink made with melted chocolate or cocoa powder, typically mixed with
+                hot milk and sweetened.</p>
+                <div class="content">
+                    <span>₱140.00</span>
+                    <a href="#" onclick="add_to_cart('Hot Chocolate', 140.00)">Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/hot_mocha.png" alt="">
+                <h3>Hot Mocha</h3>
+                <p>A delightful coffee drink combining espresso with rich chocolate, often topped with whipped
+                 cream for a decadent treat.</p>
+                <div class="content">
+                    <span>₱150.00</span>
+                    <a href="#" onclick="add_to_cart('Hot Mocha', 150.00)">Add to cart</a>            
+                </div>
+            </div>
+        </div>  
+        
+        <h1>Iced Coffee</h1>
+        <div class="products-icedcoffee">
+            <div class="box">
+                <img src="images/iced_americano.jpg" alt="">
+                <h3>Iced Americano</h3>
+                <p>Bold espresso diluted with cold water, perfect for a refreshing coffee kick.</p>
+                <div class="content">
+                    <span>₱160.00</span>
+                    <a href="#" onclick="add_to_cart('Iced Americano', 160.00)">Add to cart</a>            
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/iced_cappuccino.jpg" alt="">
+                <h3>Iced Cappucino</h3>
+                <p>Espresso, cold milk, and a thick layer of milk foam, offering a balanced and creamy coffee 
+                experience over ice.</p>
+                <div class="content">
+                    <span>₱165.00</span>
+                    <a href="#" onclick="add_to_cart('Iced Cappucino', 165.00)">Add to cart</a>            
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/iced_latte.jpg" alt="">
+                <h3>Iced Latte</h3>
+                <p> Espresso mixed with a larger portion of cold milk, creating a smooth and milky coffee drink.</p>
+                <div class="content">
+                    <span>₱180.00</span>
+                    <a href="#" onclick="add_to_cart('Iced Latte', 180.00)">Add to cart</a>            
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/iced_caramel-macchiato.jpg" alt="">
+                <h3>Iced Caramel Macchiato</h3>
+                <p>Espresso layered over cold milk with a drizzle of caramel sauce, offering a sweet and refreshing 
+                coffee treat.</p>
+                <div class="content">
+                    <span>₱190.00</span>
+                    <a href="#" onclick="add_to_cart('Iced Caramel Macchiato', 190.00)">Add to cart</a>            
+                </div>
+            </div>
+        </div>
+
+        <h1>Frappe</h1>
+        <div class="products-frappe">
+            <div class="box">
+                <img src="images/caramelcream_frappe.jpg" alt="">
+                <h3>Caramel Cream Frappe</h3>
+                <p>Creamy blend of caramel, milk, and ice, topped with whipped cream
+                 and caramel drizzle.</p>
+                <div class="content">
+                    <span>₱220.00</span>
+                    <a href="#" onclick="add_to_cart('Caramel Cream Frappe', 220.00)">Add to cart</a>            
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/chocolate_frappe.jpg" alt="">
+                <h3>Chocolate Chip Frappe</h3>
+                <p>Blended coffee, chocolate chips, milk, and ice, for a decadent treat.</p>
+                <div class="content">
+                    <span>₱240.00</span>
+                    <a href="#" onclick="add_to_cart('Chocolate Chip Frappe', 240.00)">Add to cart</a>            
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/coffejelly_frappe.jpg" alt="">
+                <h3>Coffee Jelly Frappe</h3>
+                <p>Refreshing coffee drink with blended coffee, milk, ice, and chewy coffee jelly bits.</p>
+                <div class="content">
+                    <span>₱240.00</span>
+                    <a href="#" onclick="add_to_cart('Coffee Jelly Frappe', 240.00)">Add to cart</a>            
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/strawberries and cream_frappe.jpg" alt="">
+                <h3>Strawberries and Cream Frappe</h3>
+                <p>Sweet and creamy blend of strawberries, milk, and ice, topped with whipped cream.</p>
+                <div class="content">
+                    <span>₱255.00</span>
+                    <a href="#" onclick="add_to_cart('Strawberries and Cream Frappe', 255.00)">Add to cart</a>            
+                </div>
+            </div>
+        </div>
+
+
+        <h1>Refreshers</h1>
+        <div class="products-refresher">
+            <div class="box">
+                <img src="images/refresher_mango dragonfruit.jpeg" alt="">
+                <h3>Mango Dragonfruit</h3>
+                <p>Tropical blend of mango and dragonfruit flavors, perfect for a fruity refreshment.</p>
+                <div class="content">
+                    <span>₱265.00</span>
+                    <a href="#" onclick="add_to_cart('Mango Dragonfruit', 265.00)">Add to cart</a>            </div>
+            </div>
+            <div class="box">
+                <img src="images/refresher_hibiscus-tea.jpg" alt="">
+                <h3>Hibiscus Tea with Pomegranate</h3>
+                <p>Tart and refreshing hibiscus tea with sweet and juicy pomegranate pearls.</p>
+                <div class="content">
+                    <span>₱220.00</span>
+                    <a href="#" onclick="add_to_cart('Hibiscus Tea with Pomegranate', 220.00)">Add to cart</a>            </div>
+            </div>
+            <div class="box">
+                <img src="images/refresher_pink drink.jpeg" alt="">
+                <h3>Pink Drink with Strawberry Açaí</h3>
+                <p>Sweet and vibrant blend of strawberry acai and coconut milk, topped with a light strawberry.</p>
+                <div class="content">
+                    <span>₱240.00</span>
+                    <a href="#" onclick="add_to_cart('Pink Drink with Strawberry Açaí', 240.00)">Add to cart</a>            </div>
+            </div>
+            <div class="box">
+                <img src="images/refresher_strawberry.jpeg" alt="">
+                <h3>Strawberry Açaí with Lemonade</h3>
+                <p>Refreshing combination of strawberry acai and lemonade, perfect for a tangy and fruity drink.</p>
+                <div class="content">
+                    <span>₱210.00</span>
+                    <a href="#" onclick="add_to_cart('Strawberry Açaí with Lemonade', 210.00)">Add to cart</a>            </div>
+            </div>
+        </div>
+
+        <h1>Snacks</h1>
+        <div class="products-snacks">
+            <div class="box">
+                <img src="images/chocolate chip_cookie.jpg" alt="">
+                <h3>Chocolate chip Cookie</h3>
+                <p>Classic chewy cookie studded with delicious chocolate chips.</p>
+                <div class="content">
+                    <span>₱55.00</span>
+                    <a href="#" onclick="add_to_cart('Chocolate chip Cookie', 55.00)">Add to cart</a>            
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/vanilla bean custard.jpg" alt="">
+                <h3>Vanilla Bean Custard Danish</h3>
+                <p>Flaky pastry filled with creamy vanilla bean custard.</p>
+                <div class="content">
+                    <span>₱50.00</span>
+                    <a href="#" onclick="add_to_cart('Vanilla Bean Custard Danish', 50.00)">Add to cart</a>            
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/glazed-donut.png" alt="">
+                <h3>Glazed Doughnut</h3>
+                <p>Light and fluffy donut coated in a sweet and shiny glaze.</p>
+                <div class="content">
+                    <span>₱45.00</span>
+                    <a href="#" onclick="add_to_cart('Glazed Doughnut', 45.00)">Add to cart</a>            
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Ham & Swiss_Croissant.jpeg" alt="">
+                <h3>Ham and Swiss Croissant</h3>
+                <p>Buttery croissant filled with savory ham and swiss cheese.</p>
+                <div class="content">
+                    <span>₱55.00</span>
+                    <a href="#" onclick="add_to_cart('Ham and Swiss Croissant', 55.00)">Add to cart</a>            
+                </div>
+            </div>
+    
+        </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+    <section class="team container" id="team">
+        <div class="heading">
+            <h2>Team</h2>
+        </div>
+
+        <div class="team-content">
+            <div class="team-box">
+                <img src="images/img1.jpeg" alt="">
+                <h2>Laiza</h2>
+                <span>Team Lead</span>
+                <p>In creating this responsive website, I was able to explore different perspectives and different use of languages, such as HTML/CSS/JavaScript.</p>
+            </div>
+
+            <div class="team-box">
+                <img src="images/img2.jpeg" alt="">
+                <h2>Marie</h2>
+                <span>Team Lead</span>
+                <p>In creating this responsive website, I was able to explore different perspectives and different use of languages, such as HTML/CSS/JavaScript.</p>
+            </div>
+
+            <div class="team-box">
+                <img src="images/img3.jpeg" alt="">
+                <h2>Platon</h2>
+                <span>Team Lead</span>
+                <p>In creating this responsive website, I was able to explore different perspectives and different use of languages, such as HTML/CSS/JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer container">
+        <div class="footer-box">
+            <a href="#" class="logo">Coffee.</a>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bx-envelope' ></i></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>About</h3>
+            <a href="#">Our Story</a>
+            <a href="#">FAQ</a>
+            <a href="#">Careers</a>
+        </div>
+        <div class="footer-box">
+            <h3>Customer's Resources</h3>
+            <a href="#">Menu</a>
+            <a href="#">Location</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="footer-box">
+            <h3>Services</h3>
+            <a href="#">Payment Options</a>
+            <a href="#">Refunds & Exchanges</a>
+            <a href="#">Limitation Of Liability</a>
+        </div>
+    </section>
+
+    <p class="copyright">&#169; Laiza Platon.</p>
+
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
